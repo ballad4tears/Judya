@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:theme="@style/AppTheme">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="#FFFFFF"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:text="ข้อมูล"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="#fafafa" >
+
+
+        <!-- A CardView that contains a TextView -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#99FFFFFF"
+            card_view:cardElevation="2sp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:id="@+id/texttitel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="ประวิติครอบครัว"
+                    android:textColor="#808080"
+                    android:textSize="16dip"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <Button
+                    android:text="เพิ่ม"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/button_add_data"
+                    android:background="#FF6699"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:drawSelectorOnTop="false"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

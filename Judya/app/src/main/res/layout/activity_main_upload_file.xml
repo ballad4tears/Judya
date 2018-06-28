@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView" />
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/view" />
+
+    <LinearLayout
+        android:id="@+id/fileInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#19AA88"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/white"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:text="File: "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/imagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dip"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/selectImageInCameraBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/camera_green" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#19AA88" />
+
+        <ImageView
+            android:id="@+id/selectImageInGalleryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/gallery" />
+    </LinearLayout>
+
+</RelativeLayout>

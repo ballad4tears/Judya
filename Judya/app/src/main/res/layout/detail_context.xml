@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/route"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/linear_listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Body1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Material Design is stunning!!!"
+                        android:textColor="#000000"
+                        android:id="@+id/data11"/>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_marginTop="15dp">
+            <RelativeLayout
+                android:id="@+id/layout_addcomment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77FFFFFF"
+                android:paddingRight="24dp">
+
+            </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/layout_share"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="  " />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textStyle="bold"
+                        android:text=" แชร์ตำแหน่ง" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:text="  " />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="0.15"
+                        android:src="@mipmap/ic_launcher_share" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+               android:layout_marginTop="5sp" >
+                <LinearLayout
+                    android:id="@+id/layout_gps"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="  " />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textStyle="bold"
+                        android:text="เส้นทาง" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:text="  " />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/ic_launcher_nati"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_marginTop="5sp" >
+                <LinearLayout
+                    android:id="@+id/layout_call"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text="  " />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:textStyle="bold"
+                        android:text="โทรศัพท์" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:text="  " />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:layout_marginRight="8dp"
+                        android:src="@mipmap/ic_launcher_tell"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                card_view:contentPadding="16dp"
+                card_view:cardElevation="2dp"
+                card_view:cardCornerRadius="5dp"
+                android:layout_marginTop="5sp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
